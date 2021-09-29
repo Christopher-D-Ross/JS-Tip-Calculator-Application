@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: hsl(185, 41%, 84%);
+    font-family: 'Space Mono', monospace;
+}
+
+.logo {
+    margin-top: 100px;
+}
+
+body {
+    /* display: flex; */
+    text-align: center;
+    /* flex-direction: column;
+    justify-content: space-around;
+    align-items:center; */
+}
+
+.appgrid {
+    display: grid;
+    width: 1040px;
+    height: 300px;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: hsl(0, 0%, 100%);
+    margin: 0 auto;
+    align-content: center;
+    justify-items: center;
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.input {
+    height: 200px;
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    height: 200px;
+    width: 480px;
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(0, 0%, 100%);
+}
+
+.bill {
+    background-image: url("images/icon-dollar.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 10px;
+    background-color: hsl(189, 41%, 90%);
+    border: none;
+}
+
+.people {
+    background-image:url("images/icon-person.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: 10px;
+    background-color: hsl(189, 41%, 90%);
+    border: none;
+}
+
+input {
+    height: 30px;
+    text-align: right;
+}
+
+.resetbutton {
+    margin-bottom: 10px;
+}
+
+.totals {
+    margin-top: 10px;
+}
