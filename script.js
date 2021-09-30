@@ -67,6 +67,7 @@ function reset() {
     numPeople.value = "";
     billAmt.value = "";
     customTip.style.display = "unset";
+    custIn.value = "";
     custIn.style.display = "none";
 };
 

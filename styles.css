@@ -161,6 +161,11 @@ button {
     border-radius: 5px;
 }
 
+.custombutton:hover {
+    background-color: var(--white);
+    border:2px solid var(--strong-cyan);
+}
+
 
 .tspan {
     display: block;

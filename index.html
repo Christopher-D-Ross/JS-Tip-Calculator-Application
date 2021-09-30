@@ -18,7 +18,7 @@
     <div class = "input">
       <div>
         <label class = "billlabel" for="bill">Bill</label>
-        <input class = "bill" type="text" name="bill" id="bill" placeholder = "0">
+        <input class = "bill" type="text" name="bill" id="bill" placeholder = "0" minlength="1" maxlength="8">
       </div>
       <div class = "alltips">
         <div>
@@ -31,25 +31,25 @@
           <button class = "tipbutton" id = "twentyfive">25%</button>
           <button class = "tipbutton" id = "fifty">50%</button>
           <button class = "custombutton" id = "custom">Custom</button>
-          <input type="text" class = "custominput" id = "custominput">
+          <input type="text" class = "custominput" id = "custominput" placeholder="0" maxlength="4">
         </div>
       </div>
         <div>
           <label class = "plabel" for="people">Number Of People</label>
-          <input class = "people" type="text" name="people" id="people" placeholder = "0">
+          <input class = "people" type="text" name="people" id="people" placeholder = "0" maxlength="2">
         </div>
     </div>
     <div class = "output">
       <div class = "totals">
         <div class = "taspan">
           <div>
-            <span>Tip Amount </br> <span class = "slashp">/ person</span></span>
+            <span>Tip Amount </br> <span class = "slashp">total</span></span>
           </div>
           <div class = "bignum" id = "tipamt">$0.00</div>
         </div>
         <div class = "tpspan">
           <div>
-            <span>Total </br> <span class = "slashp">/ person</span></span>
+            <span>Total Tip</br> <span class = "slashp">/ person</span></span>
           </div>
           <div class = "bignum" id = "tipperp">$0.00</div>
         </div>
