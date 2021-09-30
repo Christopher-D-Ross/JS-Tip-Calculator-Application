@@ -20,7 +20,7 @@ html {
 }
 
 .logo {
-    margin-top: 100px;
+    margin-top: 75px;
 }
 
 body {
@@ -36,7 +36,7 @@ body {
     margin: 0 auto;
     align-content: center;
     justify-items: center;
-    margin-top: 100px;
+    margin-top: 75px;
     border-radius: 10px;
 }
 
@@ -81,6 +81,21 @@ input:focus {
     background-position-x: 10px;
     background-color: hsl(189, 41%, 90%);
     border: none;
+}
+
+.custominput {
+    border: none;
+    border-style: none;
+    height: 40px;
+    width: 110px;
+    margin-top: 10px;
+    margin-right: 10px;
+    color: var(--very-dark-cyan);
+    background-color: var(--light-grayish-cyan);
+    font-family: var(--main-font);
+    font-size: 20px;
+    border-radius: 5px;
+    display: none;
 }
 
 input {

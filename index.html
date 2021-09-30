@@ -7,7 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
-  <script src = "script.js"></script>
+  <script src = "script.js" async></script>
   
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -18,24 +18,25 @@
     <div class = "input">
       <div>
         <label class = "billlabel" for="bill">Bill</label>
-        <input class = "bill" type="text" name="bill" id="bill" pattern = "[0-9]{1,6}">
+        <input class = "bill" type="text" name="bill" id="bill" placeholder = "0">
       </div>
       <div class = "alltips">
         <div>
           <span class = "tspan">Select Tip %</span>
         </div>
         <div>
-          <button class = "tipbutton">5%</button>
-          <button class = "tipbutton">10%</button>
-          <button class = "tipbutton">15%</button>
-          <button class = "tipbutton">25%</button>
-          <button class = "tipbutton">50%</button>
-          <button class = "custombutton">Custom</button>
+          <button class = "tipbutton" id = "five">5%</button>
+          <button class = "tipbutton" id = "ten">10%</button>
+          <button class = "tipbutton" id = "fifteen">15%</button>
+          <button class = "tipbutton" id = "twentyfive">25%</button>
+          <button class = "tipbutton" id = "fifty">50%</button>
+          <button class = "custombutton" id = "custom">Custom</button>
+          <input type="text" class = "custominput" id = "custominput">
         </div>
       </div>
         <div>
           <label class = "plabel" for="people">Number Of People</label>
-          <input class = "people" type="text" name="people" id="people">
+          <input class = "people" type="text" name="people" id="people" placeholder = "0">
         </div>
     </div>
     <div class = "output">
@@ -44,17 +45,17 @@
           <div>
             <span>Tip Amount </br> <span class = "slashp">/ person</span></span>
           </div>
-          <div class = "bignum">$0.00</div>
+          <div class = "bignum" id = "tipamt">$0.00</div>
         </div>
         <div class = "tpspan">
           <div>
             <span>Total </br> <span class = "slashp">/ person</span></span>
           </div>
-          <div class = "bignum">$0.00</div>
+          <div class = "bignum" id = "tipperp">$0.00</div>
         </div>
       </div>
       <div class = "resetbutton">
-        <button class = "rbutton">Reset</button>
+        <button class = "rbutton" id = "reset">Reset</button>
       </div>
     </div>
   </div>
