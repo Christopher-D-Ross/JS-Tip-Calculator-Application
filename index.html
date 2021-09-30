@@ -11,45 +11,50 @@
   
   <title>Frontend Mentor | Tip calculator app</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
   <img class = "logo" src="images/logo.svg" alt="Splitter Logo">
   <div class = "appgrid">
     <div class = "input">
-      <div class = >
-        <label for="bill">Bill</label>
+      <div>
+        <label class = "billlabel" for="bill">Bill</label>
         <input class = "bill" type="text" name="bill" id="bill">
       </div>
-      <div>
-        <span>Select Tip %</span>
-        <button>5%</button>
-        <button>10%</button>
-        <button>15%</button>
-        <button>25%</button>
-        <button>50%</button>
-        <button>Custom</button>
+      <div class = "alltips">
+        <div>
+          <span class = "tspan">Select Tip %</span>
+        </div>
+        <div>
+          <button class = "tipbutton">5%</button>
+          <button class = "tipbutton">10%</button>
+          <button class = "tipbutton">15%</button>
+          <button class = "tipbutton">25%</button>
+          <button class = "tipbutton">50%</button>
+          <button class = "custombutton">Custom</button>
+        </div>
       </div>
         <div>
-          <label for="people">Number Of People</label>
+          <label class = "plabel" for="people">Number Of People</label>
           <input class = "people" type="text" name="people" id="people">
         </div>
     </div>
     <div class = "output">
       <div class = "totals">
-        <span>Tip Amount</span>
-        <span>/ person</span>
-        <div>$0.00</div>
-        <span>Total</span>
-        <span>/ person</span>
-        <div>$0.00</div>
+        <div class = "taspan">
+          <div>
+            <span>Tip Amount </br> <span class = "slashp">/ person</span></span>
+          </div>
+          <div class = "bignum">$0.00</div>
+        </div>
+        <div class = "tpspan">
+          <div>
+            <span>Total </br> <span class = "slashp">/ person</span></span>
+          </div>
+          <div class = "bignum">$0.00</div>
+        </div>
       </div>
       <div class = "resetbutton">
-        <button>Reset</button>
+        <button class = "rbutton">Reset</button>
       </div>
     </div>
   </div>
