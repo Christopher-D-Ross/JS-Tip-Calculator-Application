@@ -219,3 +219,15 @@ button {
     font-weight: bold;
     font-size: 40px;
 }
+
+.attribution {
+    margin-top: 60px;
+}
+
+@media screen and (max-width: 900px) {
+    .appgrid {
+        grid-template-columns: 1fr;
+        height: 940px;
+        width: 440px;
+    }
+}
